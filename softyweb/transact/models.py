@@ -22,7 +22,7 @@ class Order(models.Model):
     offering                = models.DecimalField(max_digits=10, decimal_places=2, default=3)
     instruction             = models.TextField(default='Gauteng')
     payment_method          = models.CharField(max_length=300, choices=PREFFERED_METHOD, default="PayFast")
-    order_number            = models.CharField(max_length=300, blank=False, unique=False, default='')
+    order_number            = models.CharField(max_length=300, blank=False, unique=False, default='generated')
     device_name             = models.CharField(max_length=700, null=True, blank=True)
     ip_adress               = models.CharField(max_length=40, default="0.0.0.1")
     currency                = models.CharField(max_length=40, default="ZAR")
@@ -45,6 +45,7 @@ class Order(models.Model):
     
     def save(self, *args, **kwargs):
         self.order_total =  self.offering + self.tithe
+        self.order_number =  str(self.id)[24:]
         super(Order, self).save(*args, **kwargs)
     
     def get_order_total(self):
