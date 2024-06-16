@@ -2,7 +2,7 @@ import uuid
 from django.db import models
 
 from softyweb import settings
-from transact.utils import PREFFERED_METHOD, STATUS
+from transact.utils import LOCAL_TYPE, PREFFERED_METHOD, STATUS
 
     
 
@@ -20,6 +20,8 @@ class Order(models.Model):
     order_total             = models.DecimalField(max_digits=10, decimal_places=2, default=3)
     tithe                   = models.DecimalField(max_digits=10, decimal_places=2, default=3)
     offering                = models.DecimalField(max_digits=10, decimal_places=2, default=3)
+    local_fund              = models.DecimalField(max_digits=10, decimal_places=2, default=3)
+    local_fund_type          = models.CharField(max_length=300, choices=LOCAL_TYPE, default="rent")
     instruction             = models.TextField(default='Gauteng')
     payment_method          = models.CharField(max_length=300, choices=PREFFERED_METHOD, default="PayFast")
     order_number            = models.CharField(max_length=300, blank=False, unique=False, default='generated')

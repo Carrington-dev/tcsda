@@ -182,3 +182,11 @@ SIMPLE_JWT = {
     'BLACKLIST_AFTER_ROTATION': False,
     'UPDATE_LAST_LOGIN': True,
 }
+
+CSRF_TRUSTED_ORIGINS = ["https://stemgon.co.za", "https://www.stemgon.co.za", "https://*.ngrok-free.app", "https://*.*.co.za",]
+
+
+CORS_ORIGIN_WHITELIST = (
+  'http://localhost:*',
+  "https://*.ngrok.com",
+)

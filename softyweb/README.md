@@ -17,4 +17,10 @@ It follows a monolythic arctecture but it is highly expandable to microservices 
 2. mysql or mongodb
 3. frontend will be just html and javascript
 
+# Add extra
 
+1. Publishing
+2. Utilities
+3. Local-church
+4. Rent
+5. 
