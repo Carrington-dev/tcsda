@@ -51,7 +51,7 @@ docker-compose.yaml
 
 To explore using different domains/sub-domains for each service
 ```bash
-forex.payglen.co.za
-auth.payglen.co.za
+offering.tcsda.org.za
+auth.tcsda.org.za
 # Just an idea
 ```
