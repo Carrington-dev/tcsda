@@ -17,7 +17,7 @@ We are committed to providing a **safe and respectful environment** for all part
 - Race, ethnicity, or national origin  
 - Disability  
 - Religion or denominational affiliation  
-- Sexual orientation  
+- Sexual orientation based on the Bible  
 - Level of experience, technical background, or education  
 
 ---
